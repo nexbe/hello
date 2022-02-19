@@ -6,15 +6,7 @@ function App() {
   const [firstName, setfirstName] = useState('');
   const [lastName, setLastName] = useState('');
 
-  function handleClick() {
-    setfirstName('');
-    setLastName('');
-    console.log('button click');
-  }
-
-  function handleFirstNameChange(e) {
-    setfirstName(e.target.value);
-  }
+  const handleFirstNameChange = (e) => setfirstName(e.target.value);
 
   function handleLastNameChange(e) {
     setLastName(e.target.value);
