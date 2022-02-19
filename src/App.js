@@ -7,8 +7,8 @@ function App() {
       <div className='header'>
         <Header />
       </div>
-      <div className='content'>Content</div>
-      <div className='footer'>Footer</div>
+      <div className='content'>New Content</div>
+      <div className='footer'>New Footer</div>
     </div>
   );
 }
