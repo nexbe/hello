@@ -1,6 +1,7 @@
 import React from 'react';
 
 function Header(props) {
+  console.log('header props', props.name);
   return (
     <>
       <div className='menu'>
@@ -15,6 +16,7 @@ function Header(props) {
       <div className='menu'>
         <a href='/'>About</a>
       </div>
+      <div>Hello , {props.name}</div>
     </>
   );
 }

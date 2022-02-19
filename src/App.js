@@ -12,10 +12,14 @@ function App() {
     setLastName(e.target.value);
   }
 
+  const name = () => {
+    return firstName + lastName;
+  };
+
   return (
     <div className='container'>
       <div className='header'>
-        <Header />
+        <Header name={firstName + lastName} />
       </div>
       <div className='content'>
         <input
@@ -35,7 +39,9 @@ function App() {
         last Name : {lastName}
         <hr />
       </div>
-      <div className='footer'>New Footer</div>
+      <div className='footer'>
+        {/* <Footer title="my first title for footer" /> */}
+      </div>
     </div>
   );
 }
